@@ -4,7 +4,11 @@ import SplitImageLeft from "@/components/SplitImageLeft";
 import SplitButtonLeft from "@/components/SplitButtonLeft";
 import Hero from "@/components/Hero";
 import { createClient } from "@/prismicio";
-import { SliceZone } from "@prismicio/react";
+// import { SliceZone } from "@prismicio/react";
+const SliceZone = dynamic(() =>
+  import("@prismicio/react").then((module) => module.SliceZone)
+);
+
 import { components } from "slices/.";
 
 import * as prismic from "@prismicio/client";
