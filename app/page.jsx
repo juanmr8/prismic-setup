@@ -4,11 +4,7 @@ import SplitImageLeft from "@/components/SplitImageLeft";
 import SplitButtonLeft from "@/components/SplitButtonLeft";
 import Hero from "@/components/Hero";
 import { createClient } from "@/prismicio";
-// import { SliceZone } from "@prismicio/react";
-const SliceZone = dynamic(() =>
-  import("@prismicio/react").then((module) => module.SliceZone)
-);
-
+import { SliceZone } from "@prismicio/react";
 import { components } from "slices/.";
 
 import * as prismic from "@prismicio/client";
@@ -18,17 +14,17 @@ const queryHomepage = () => {
   return client.getSingle("homepage");
 };
 
-// export async function generateMetadata() {
-//   const page = await queryHomepage();
+export async function generateMetadata() {
+  const page = await queryHomepage();
 
-//   return {
-//     openGraph: {
-//       title: page.data.meta_title,
-//       description: page.data.meta_description,
-//       image: prismic.asImageSrc(page.data.meta_image.url),
-//     },
-//   };
-// }
+  return {
+    openGraph: {
+      title: page.data.meta_title,
+      description: page.data.meta_description,
+      image: prismic.asImageSrc(page.data.meta_image.url),
+    },
+  };
+}
 
 export default async function Home() {
   const page = await queryHomepage();
