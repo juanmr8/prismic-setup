@@ -1,5 +1,5 @@
 import { PrismicRichText } from "@prismicio/react";
-import ButtonPrismic from "@/components/ButtonPrismic";
+import Button from "@/components/Button";
 import CallToActionButton from "@/components/CallToActionButton";
 
 /**
@@ -18,12 +18,13 @@ const TextSlice = ({ slice }) => {
         } w-screen bg-greenGrey`}>
         <div className='container gap-6 flex flex-col items-center'>
           <PrismicRichText field={slice.primary.text_field} />
-          {/* {slice.variation === "callToAction" && (
-            <ButtonPrismic
-              link={slice.primary.button_link}
+          {slice.variation === "callToAction" && (
+            <Button
+              link={slice.primary.button_link.url}
               label={slice.primary.button_label}
+              white={false}
             />
-          )} */}
+          )}
         </div>
       </div>
     </section>

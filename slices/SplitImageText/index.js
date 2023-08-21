@@ -15,7 +15,6 @@ const backgroundColor = {
   Green: "bg-greenGrey",
 };
 const SplitImageText = ({ slice }) => {
-  console.log(slice.primary.image);
   return (
     <section
       data-slice-type={slice.slice_type}
