@@ -1,0 +1,56 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Pariatur esse dolore exercitation et consectetur est commodo exercitation. Cillum magna et nulla non."
+						}
+					}
+				]
+			},
+			"embed": {
+				"embed_url": "https://youtu.be/-yIsQPp31L0",
+				"__TYPE__": "EmbedContent",
+				"type": "video",
+				"version": "1.0",
+				"title": "All 12 useState & useEffect Mistakes Junior React Developers Still Make in 2023",
+				"author_name": "ByteGrad",
+				"author_url": "https://www.youtube.com/@ByteGrad",
+				"provider_name": "YouTube",
+				"provider_url": "https://www.youtube.com/",
+				"thumbnail_url": "https://i.ytimg.com/vi/-yIsQPp31L0/hqdefault.jpg",
+				"thumbnail_width": 480,
+				"thumbnail_height": 360,
+				"html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/-yIsQPp31L0?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen title=\"All 12 useState &amp; useEffect Mistakes Junior React Developers Still Make in 2023\"></iframe>",
+				"all": {
+					"embed_url": "https://youtu.be/-yIsQPp31L0",
+					"type": "video",
+					"version": "1.0",
+					"title": "All 12 useState & useEffect Mistakes Junior React Developers Still Make in 2023",
+					"author_name": "ByteGrad",
+					"author_url": "https://www.youtube.com/@ByteGrad",
+					"provider_name": "YouTube",
+					"provider_url": "https://www.youtube.com/",
+					"thumbnail_url": "https://i.ytimg.com/vi/-yIsQPp31L0/hqdefault.jpg",
+					"thumbnail_width": 480,
+					"thumbnail_height": 360,
+					"html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/-yIsQPp31L0?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen title=\"All 12 useState &amp; useEffect Mistakes Junior React Developers Still Make in 2023\"></iframe>",
+					"height": 113,
+					"width": 200
+				}
+			}
+		},
+		"items": []
+	}
+]
