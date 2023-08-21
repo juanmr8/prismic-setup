@@ -1,3 +1,5 @@
+"use client";
+
 import TextCenter from "@/components/TextCenter";
 import CallToActionButton from "@/components/CallToActionButton";
 import SplitImageLeft from "@/components/SplitImageLeft";
@@ -30,7 +32,6 @@ export default async function Home() {
   const page = await queryHomepage();
   return (
     <main>
-      <h1>Hello</h1>
       <SliceZone slices={page.data.slices} components={components} />
     </main>
   );
