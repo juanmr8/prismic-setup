@@ -28,15 +28,15 @@ const SplitImageText = ({ slice }) => {
               ["default"].includes(slice.variation) ? "" : "md:order-last"
             }`.trim()}
           />
-          {/* <div className='flex flex-col gap-4 items-start'>
-            {["heroSection"].includes(slice.variation) ? (
+          <div className='flex flex-col gap-4 items-start'>
+            {/* {["heroSection"].includes(slice.variation) ? (
               <div>
                 <PrismicRichText field={slice.primary.title} />
                 <PrismicRichText field={slice.primary.paragraph} />
               </div>
             ) : (
-              <PrismicRichText field={slice.primary.text} />
-            )} */}
+              <PrismicRichText field={slice.primary.text} /> */}
+            {/* )} */}
             <ButtonPrismic
               link={slice.primary.button_link}
               label={slice.primary.button_label}
