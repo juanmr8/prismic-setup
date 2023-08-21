@@ -1,5 +1,3 @@
-"use client";
-
 import TextCenter from "@/components/TextCenter";
 import CallToActionButton from "@/components/CallToActionButton";
 import SplitImageLeft from "@/components/SplitImageLeft";
