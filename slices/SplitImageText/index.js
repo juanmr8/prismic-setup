@@ -34,10 +34,10 @@ const SplitImageText = ({ slice }) => {
           />
           <div className='flex flex-col gap-4 items-start'>
             {["heroSection"].includes(slice.variation) ? (
-              <>
+              <div>
                 <PrismicRichText field={slice.primary.title} />
                 <PrismicRichText field={slice.primary.paragraph} />
-              </>
+              </div>
             ) : (
               <PrismicRichText field={slice.primary.text} />
             )}
