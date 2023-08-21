@@ -26,12 +26,12 @@ const SplitImageText = ({ slice }) => {
             : backgroundColor.Grey
         }`}>
         <div className='container grid grid-cols-1 md:grid-cols-2 gap-24 items-center min-h-[512px] py-24'>
-          <PrismicNextImage
+          {/* <PrismicNextImage
             field={slice.primary.image}
             className={`w-full h-auto rounded-3xl ${
               ["default"].includes(slice.variation) ? "" : "md:order-last"
             }`.trim()}
-          />
+          /> */}
           <div className='flex flex-col gap-4 items-start'>
             {["heroSection"].includes(slice.variation) ? (
               <div>
@@ -41,10 +41,10 @@ const SplitImageText = ({ slice }) => {
             ) : (
               <PrismicRichText field={slice.primary.text} />
             )}
-            {/* <ButtonPrismic
+            <ButtonPrismic
               link={slice.primary.button_link}
               label={slice.primary.button_label}
-            /> */}
+            />
           </div>
         </div>
       </div>
