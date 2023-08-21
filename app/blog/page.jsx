@@ -4,7 +4,11 @@ export default async function Blog() {
   return (
     <main>
       <h1>Hello</h1>
-      <Button />
+      <Button
+        link='https://platform.cloudways.com/apps'
+        label='Learn More'
+        white={false}
+      />{" "}
     </main>
   );
 }
