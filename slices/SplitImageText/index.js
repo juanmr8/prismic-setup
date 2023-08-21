@@ -14,6 +14,7 @@ const backgroundColor = {
   Green: "bg-greenGrey",
 };
 const SplitImageText = ({ slice }) => {
+  console.log(slice.primary.button_link);
   return (
     <section
       data-slice-type={slice.slice_type}
@@ -43,7 +44,7 @@ const SplitImageText = ({ slice }) => {
               <PrismicRichText field={slice.primary.text} />
             )}
             <Button
-              link={slice.primary.button_link}
+              link={slice.primary.button_link.url}
               label={slice.primary.button_label}
               white={false}
             />
