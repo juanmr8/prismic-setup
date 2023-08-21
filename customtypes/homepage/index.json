@@ -12,7 +12,8 @@
         "config": {
           "choices": {
             "text_slice": { "type": "SharedSlice" },
-            "split_image_text": { "type": "SharedSlice" }
+            "split_image_text": { "type": "SharedSlice" },
+            "embed_section": { "type": "SharedSlice" }
           }
         }
       }

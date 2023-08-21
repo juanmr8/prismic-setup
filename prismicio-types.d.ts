@@ -72,7 +72,10 @@ export type GlobalNavDocument<Lang extends string = string> =
     Lang
   >;
 
-type HomepageDocumentDataSlicesSlice = TextSliceSlice | SplitImageTextSlice;
+type HomepageDocumentDataSlicesSlice =
+  | TextSliceSlice
+  | SplitImageTextSlice
+  | EmbedSectionSlice;
 
 /**
  * Content for homepage documents
