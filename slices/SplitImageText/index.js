@@ -37,10 +37,10 @@ const SplitImageText = ({ slice }) => {
             ) : (
               <PrismicRichText field={slice.primary.text} /> */}
             {/* )} */}
-            {/* <ButtonPrismic
+            <ButtonPrismic
               link={slice.primary.button_link}
               label={slice.primary.button_label}
-            /> */}
+            />
           </div>
         </div>
       </div>
