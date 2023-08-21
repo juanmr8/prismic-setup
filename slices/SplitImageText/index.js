@@ -2,6 +2,7 @@ import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import ButtonPrismic from "@/components/ButtonPrismic";
 import Button from "@/components/Button";
+import Image from "next/image";
 
 /**
  * @typedef {import("@prismicio/client").Content.SplitImageTextSlice} SplitImageTextSlice
@@ -14,7 +15,7 @@ const backgroundColor = {
   Green: "bg-greenGrey",
 };
 const SplitImageText = ({ slice }) => {
-  console.log(slice.primary.button_link);
+  console.log(slice.primary.image);
   return (
     <section
       data-slice-type={slice.slice_type}
@@ -28,12 +29,14 @@ const SplitImageText = ({ slice }) => {
             : backgroundColor.Grey
         }`}>
         <div className='container grid grid-cols-1 md:grid-cols-2 gap-24 items-center min-h-[512px] py-24'>
-          {/* <PrismicNextImage
-            field={slice.primary.image}
+          <Image
+            src={slice.primary.image.url}
+            width={slice.primary.image.dimensions.width}
+            height={slice.primary.image.dimensions.height}
             className={`w-full h-auto rounded-3xl ${
               ["default"].includes(slice.variation) ? "" : "md:order-last"
             }`.trim()}
-          /> */}
+          />
           <div className='flex flex-col gap-4 items-start'>
             {["heroSection"].includes(slice.variation) ? (
               <div>
