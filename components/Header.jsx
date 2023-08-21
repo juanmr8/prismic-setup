@@ -8,7 +8,7 @@ export default async function Header() {
 
   return (
     <div className='h-24 flex justify-center items-center font-semibold bg-greenGrey'>
-      <div className='container flex justify-between'>
+      {/* <div className='container flex justify-between'>
         <span className='text-xl leading-6'>
           <PrismicText field={nav.data.company_name} />
         </span>
@@ -23,7 +23,7 @@ export default async function Header() {
             );
           })}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

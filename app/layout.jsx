@@ -6,9 +6,6 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
-export const config = {
-  unstable_runtimeJS: false,
-};
 
 const space_grotesk = Space_Grotesk({
   weight: ["600"],
