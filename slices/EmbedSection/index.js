@@ -23,7 +23,7 @@ const EmbedSection = ({ slice }) => {
         }`}>
         <div className='container gap-8 flex flex-col items-center'></div>
         <PrismicRichText field={slice.primary.text} />
-        <div dangerouslySetInnerHTML={{ __html: slice.primary.embed.html }} />
+        {/* <div dangerouslySetInnerHTML={{ __html: slice.primary.embed.html }} /> */}
       </div>
     </section>
   );
