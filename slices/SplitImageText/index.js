@@ -29,18 +29,18 @@ const SplitImageText = ({ slice }) => {
             }`.trim()}
           /> */}
           <div className='flex flex-col gap-4 items-start'>
-            {/* {["heroSection"].includes(slice.variation) ? (
+            {["heroSection"].includes(slice.variation) ? (
               <div>
                 <PrismicRichText field={slice.primary.title} />
                 <PrismicRichText field={slice.primary.paragraph} />
               </div>
             ) : (
-              <PrismicRichText field={slice.primary.text} /> */}
-            {/* )} */}
-            <ButtonPrismic
+              <PrismicRichText field={slice.primary.text} /> */
+            )}
+            {/* <ButtonPrismic
               link={slice.primary.button_link}
               label={slice.primary.button_label}
-            />
+            /> */}
           </div>
         </div>
       </div>
