@@ -15,15 +15,15 @@ export default async function Page({ params }) {
   return <SliceZone slices={page.data.slices} components={components} />;
 }
 
-// export async function generateMetadata({ params }) {
-//   const client = createClient();
-//   const page = await client.getByUID("marketing_page", params.uid);
+export async function generateMetadata({ params }) {
+  const client = createClient();
+  const page = await client.getByUID("marketing_page", params.uid);
 
-//   return {
-//     title: page.data.meta_title,
-//     description: page.data.meta_description,
-//   };
-// }
+  return {
+    title: page.data.meta_title,
+    description: page.data.meta_description,
+  };
+}
 
 export async function generateStaticParams() {
   const client = createClient();
